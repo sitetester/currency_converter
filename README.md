@@ -22,9 +22,7 @@ Write an application (Not necessarily UI) which would fulfil these requirements.
 * composer install
 * php bin/console server:start
 
-#### To access in browser
-Open a browser with address & port where web server started in terminal window by running ```php bin/console server:start```
 
 #### Unit tests
-Application functionality is tested using unit & functional tests.
-To run all the tests, simply run `phpunit` at root of the project
+Application functionality is tested using unit & functional tests. To run all the tests, simply run `phpunit` at root of the project.
+See `CurrencyControllerTest` how the Controller part is tested.
