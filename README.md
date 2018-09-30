@@ -10,24 +10,21 @@ Write an application (Not necessarily UI) which would fulfil these requirements.
 4) Should have some automated tests - amount of tests is up to you
 
 
-# Project Setup
-
 #### Required setup/environment:
 * PHP 7.2
-* Symfony 4.1
+* phpunit (https://phpunit.de/getting-started/phpunit-7.html)
+* [Composer](https://getcomposer.org/) is used for managing dependencies.
 
-#### Project dependencies
-[Composer](https://getcomposer.org/) is used for managing dependencies.
 
-Open a terminal window & run ```composer install``` command at root of the project.
-It will install all required dependencies of the project which are specified in ```composer.json``` file.
-It will also create ```vendor``` directory on file system.
+# Project Setup
+* git clone https://github.com/sitetester/currency_converter.git
+* cd currency_converter
+* composer install
+* php bin/console server:start
 
-#### Web server:
-If you don't have apache/nginx already configured, you can use php built-in web server as well.
-Open a terminal window & run ```php bin/console server:start``` at root of the project to start the server. Then open a browser with address & port where web
-server started in terminal window.
+#### To access in browser
+Open a browser with address & port where web server started in terminal window by running ```php bin/console server:start```
 
 #### Unit tests
-Application functionality is tested using unit & functional tests
+Application functionality is tested using unit & functional tests.
 To run all the tests, simply run `phpunit` at root of the project
