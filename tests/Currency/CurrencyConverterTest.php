@@ -37,7 +37,9 @@ class CurrencyConverterTest extends TestCase
 
     /**
      * See screenshots in /Resources directory to confirm the formula is correctly used in CurrencyConverter
-     * I USD = 0.861543 EUR, 1 EUR = 0.890832 GBP => 0.861543 EUR = 0.890832 GBP * 0.861543 EUR
+     * I USD = 0.861543 EUR
+     * 1 EUR = 0.890832 GBP
+     * 0.861543 EUR = 0,767490073776 GBP (0.890832 GBP * 0.861543 EUR)
      */
     public function testConvertCurrencyUsdToGbp(): void
     {
